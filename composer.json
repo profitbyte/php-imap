@@ -40,7 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Webklex\\PHPIMAP\\": "src"
+            "Profitbyte\\PHPIMAP\\": "src"
         }
     },
     "autoload-dev": {
