@@ -1,5 +1,5 @@
 {
-    "name": "Profitbyte/php-imap",
+    "name": "profitbyte/php-imap",
     "type": "library",
     "description": "PHP IMAP client",
     "keywords": [
