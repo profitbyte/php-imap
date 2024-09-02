@@ -12,8 +12,8 @@
 
 namespace Tests\fixtures;
 
-use Webklex\PHPIMAP\Attachment;
-use Webklex\PHPIMAP\Support\AttachmentCollection;
+use Profitbyte\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\Support\AttachmentCollection;
 
 /**
  * Class NestesEmbeddedWithAttachmentTest

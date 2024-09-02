@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Exceptions;
+namespace Profitbyte\PHPIMAP\Exceptions;
 
 use \Exception;
 
 /**
  * Class MessageHeaderFetchingException
  *
- * @package Webklex\PHPIMAP\Exceptions
+ * @package Profitbyte\PHPIMAP\Exceptions
  */
 class MessageHeaderFetchingException extends Exception {
 

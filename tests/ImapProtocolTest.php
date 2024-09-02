@@ -13,9 +13,9 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Connection\Protocols\ImapProtocol;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Connection\Protocols\ImapProtocol;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
 
 class ImapProtocolTest extends TestCase {
 

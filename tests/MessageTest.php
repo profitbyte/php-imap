@@ -15,27 +15,27 @@ namespace Tests;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use ReflectionException;
-use Webklex\PHPIMAP\Attachment;
-use Webklex\PHPIMAP\Attribute;
-use Webklex\PHPIMAP\Client;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Connection\Protocols\Response;
-use Webklex\PHPIMAP\Exceptions\EventNotFoundException;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MessageContentFetchingException;
-use Webklex\PHPIMAP\Exceptions\MessageFlagException;
-use Webklex\PHPIMAP\Exceptions\MessageNotFoundException;
-use Webklex\PHPIMAP\Exceptions\MessageSizeFetchingException;
-use Webklex\PHPIMAP\Exceptions\ResponseException;
-use Webklex\PHPIMAP\IMAP;
-use Webklex\PHPIMAP\Message;
-use Webklex\PHPIMAP\Connection\Protocols\ImapProtocol;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\Attribute;
+use Profitbyte\PHPIMAP\Client;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Connection\Protocols\Response;
+use Profitbyte\PHPIMAP\Exceptions\EventNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\MessageContentFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\MessageFlagException;
+use Profitbyte\PHPIMAP\Exceptions\MessageNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\MessageSizeFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Message;
+use Profitbyte\PHPIMAP\Connection\Protocols\ImapProtocol;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
 
 class MessageTest extends TestCase {
 
@@ -118,12 +118,12 @@ class MessageTest extends TestCase {
         $returnPath = $message->get("Return-Path");
 
         self::assertInstanceOf(Attribute::class, $subject);
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", $subject->toString());
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", (string)$message->subject);
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", $subject->toString());
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", (string)$message->subject);
         self::assertSame("<noreply@github.com>", $returnPath->toString());
         self::assertSame("return_path", $returnPath->getName());
         self::assertSame("-4.299", (string)$message->get("X-Spam-Score"));
-        self::assertSame("Webklex/php-imap/issues/349/1365266070@github.com", (string)$message->get("Message-ID"));
+        self::assertSame("Profitbyte/php-imap/issues/349/1365266070@github.com", (string)$message->get("Message-ID"));
         self::assertSame(6, $message->get("received")->count());
         self::assertSame(IMAP::MESSAGE_PRIORITY_UNKNOWN, (int)$message->get("priority")());
     }
@@ -180,12 +180,12 @@ class MessageTest extends TestCase {
         $returnPath = $message->get("Return-Path");
 
         self::assertInstanceOf(Attribute::class, $subject);
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", $subject->toString());
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", (string)$message->subject);
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", $subject->toString());
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", (string)$message->subject);
         self::assertSame("<noreply@github.com>", $returnPath->toString());
         self::assertSame("return_path", $returnPath->getName());
         self::assertSame("-4.299", (string)$message->get("X-Spam-Score"));
-        self::assertSame("Webklex/php-imap/issues/349/1365266070@github.com", (string)$message->get("Message-ID"));
+        self::assertSame("Profitbyte/php-imap/issues/349/1365266070@github.com", (string)$message->get("Message-ID"));
         self::assertSame(6, $message->get("received")->count());
         self::assertSame(IMAP::MESSAGE_PRIORITY_UNKNOWN, (int)$message->get("priority")());
 

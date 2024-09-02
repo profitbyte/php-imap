@@ -14,12 +14,12 @@ namespace Tests;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Address;
-use Webklex\PHPIMAP\Attribute;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Header;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Address;
+use Profitbyte\PHPIMAP\Attribute;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Header;
+use Profitbyte\PHPIMAP\IMAP;
 
 class HeaderTest extends TestCase {
 
@@ -60,12 +60,12 @@ class HeaderTest extends TestCase {
 
         self::assertSame($raw_header, $header->raw);
         self::assertInstanceOf(Attribute::class, $subject);
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", $subject->toString());
-        self::assertSame("Re: [Webklex/php-imap] Read all folders? (Issue #349)", (string)$header->subject);
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", $subject->toString());
+        self::assertSame("Re: [Profitbyte/php-imap] Read all folders? (Issue #349)", (string)$header->subject);
         self::assertSame("<noreply@github.com>", $returnPath->toString());
         self::assertSame("return_path", $returnPath->getName());
         self::assertSame("-4.299", (string)$header->get("X-Spam-Score"));
-        self::assertSame("Webklex/php-imap/issues/349/1365266070@github.com", (string)$header->get("Message-ID"));
+        self::assertSame("Profitbyte/php-imap/issues/349/1365266070@github.com", (string)$header->get("Message-ID"));
         self::assertSame(6, $header->get("received")->count());
         self::assertSame(IMAP::MESSAGE_PRIORITY_UNKNOWN, (int)$header->get("priority")());
 
@@ -75,11 +75,11 @@ class HeaderTest extends TestCase {
         self::assertSame("notifications@github.com", $from->mail);
         self::assertSame("Username <notifications@github.com>", $from->full);
 
-        self::assertSame("Webklex/php-imap", $to->personal);
+        self::assertSame("Profitbyte/php-imap", $to->personal);
         self::assertSame("php-imap", $to->mailbox);
         self::assertSame("noreply.github.com", $to->host);
         self::assertSame("php-imap@noreply.github.com", $to->mail);
-        self::assertSame("Webklex/php-imap <php-imap@noreply.github.com>", $to->full);
+        self::assertSame("Profitbyte/php-imap <php-imap@noreply.github.com>", $to->full);
 
         self::assertInstanceOf(Carbon::class, $date);
         self::assertSame("2022-12-26 08:07:14 GMT-0800", $date->format("Y-m-d H:i:s T"));

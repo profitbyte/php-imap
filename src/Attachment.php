@@ -10,17 +10,17 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 use Illuminate\Support\Str;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\MethodNotFoundException;
-use Webklex\PHPIMAP\Support\Masks\AttachmentMask;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\MethodNotFoundException;
+use Profitbyte\PHPIMAP\Support\Masks\AttachmentMask;
 
 /**
  * Class Attachment
  *
- * @package Webklex\PHPIMAP
+ * @package Profitbyte\PHPIMAP
  *
  * @property integer part_number
  * @property integer size

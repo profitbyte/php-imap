@@ -14,32 +14,32 @@
 namespace Tests\live;
 
 use Carbon\Carbon;
-use Webklex\PHPIMAP\Client;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\EventNotFoundException;
-use Webklex\PHPIMAP\Exceptions\FolderFetchingException;
-use Webklex\PHPIMAP\Exceptions\GetMessagesFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\MessageContentFetchingException;
-use Webklex\PHPIMAP\Exceptions\MessageFlagException;
-use Webklex\PHPIMAP\Exceptions\MessageHeaderFetchingException;
-use Webklex\PHPIMAP\Exceptions\MessageNotFoundException;
-use Webklex\PHPIMAP\Exceptions\MessageSizeFetchingException;
-use Webklex\PHPIMAP\Exceptions\ResponseException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\Folder;
-use Webklex\PHPIMAP\Header;
-use Webklex\PHPIMAP\IMAP;
-use Webklex\PHPIMAP\Message;
-use Webklex\PHPIMAP\Structure;
-use Webklex\PHPIMAP\Support\AttachmentCollection;
-use Webklex\PHPIMAP\Support\FlagCollection;
-use Webklex\PHPIMAP\Support\Masks\AttachmentMask;
-use Webklex\PHPIMAP\Support\Masks\MessageMask;
+use Profitbyte\PHPIMAP\Client;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\EventNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\FolderFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\GetMessagesFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\MessageContentFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\MessageFlagException;
+use Profitbyte\PHPIMAP\Exceptions\MessageHeaderFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\MessageNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\MessageSizeFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Folder;
+use Profitbyte\PHPIMAP\Header;
+use Profitbyte\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Message;
+use Profitbyte\PHPIMAP\Structure;
+use Profitbyte\PHPIMAP\Support\AttachmentCollection;
+use Profitbyte\PHPIMAP\Support\FlagCollection;
+use Profitbyte\PHPIMAP\Support\Masks\AttachmentMask;
+use Profitbyte\PHPIMAP\Support\Masks\MessageMask;
 use \ReflectionException;
 
 /**
@@ -1376,7 +1376,7 @@ class MessageTest extends LiveMailboxTestCase {
         $folder = $this->getFolder('INBOX');
 
         $message = $this->appendMessageTemplate($folder, "1366671050@github.com.eml");
-        self::assertEquals("Webklex/php-imap/issues/349@github.com", $message->getInReplyTo());
+        self::assertEquals("Profitbyte/php-imap/issues/349@github.com", $message->getInReplyTo());
 
         // Cleanup
         self::assertTrue($message->delete());
@@ -2071,7 +2071,7 @@ class MessageTest extends LiveMailboxTestCase {
 
         $message = $this->appendMessageTemplate($folder, "1366671050@github.com.eml");
         self::assertIsArray($message->getReferences()->all());
-        self::assertEquals("Webklex/php-imap/issues/349@github.com", $message->getReferences()->first());
+        self::assertEquals("Profitbyte/php-imap/issues/349@github.com", $message->getReferences()->first());
 
         // Cleanup
         self::assertTrue($message->delete());

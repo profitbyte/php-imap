@@ -10,12 +10,12 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 /**
  * Class ClientManager
  *
- * @package Webklex\IMAP
+ * @package Profitbyte\IMAP
  */
 class ClientManager {
 

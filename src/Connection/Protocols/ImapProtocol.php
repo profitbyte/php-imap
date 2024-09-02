@@ -10,26 +10,26 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace Profitbyte\PHPIMAP\Connection\Protocols;
 
 use Exception;
 use Throwable;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MessageNotFoundException;
-use Webklex\PHPIMAP\Exceptions\ResponseException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\Header;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\MessageNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Header;
+use Profitbyte\PHPIMAP\IMAP;
 
 /**
  * Class ImapProtocol
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package Profitbyte\PHPIMAP\Connection\Protocols
  *
  * @reference https://www.rfc-editor.org/rfc/rfc2087.txt
  */

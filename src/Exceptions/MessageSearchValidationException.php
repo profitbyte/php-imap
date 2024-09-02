@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Exceptions;
+namespace Profitbyte\PHPIMAP\Exceptions;
 
 use \Exception;
 
 /**
  * Class MessageSearchValidationException
  *
- * @package Webklex\PHPIMAP\Exceptions
+ * @package Profitbyte\PHPIMAP\Exceptions
  */
 class MessageSearchValidationException extends Exception {
 

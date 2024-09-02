@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support;
+namespace Profitbyte\PHPIMAP\Support;
 
 use Illuminate\Support\Collection;
-use Webklex\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\Attachment;
 
 /**
  * Class AttachmentCollection
  *
- * @package Webklex\PHPIMAP\Support
+ * @package Profitbyte\PHPIMAP\Support
  * @implements Collection<int, Attachment>
  */
 class AttachmentCollection extends PaginatedCollection {

@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support;
+namespace Profitbyte\PHPIMAP\Support;
 
 use Illuminate\Support\Collection;
 
 /**
  * Class FlagCollection
  *
- * @package Webklex\PHPIMAP\Support
+ * @package Profitbyte\PHPIMAP\Support
  * @implements Collection<string, string>
  */
 class FlagCollection extends PaginatedCollection {

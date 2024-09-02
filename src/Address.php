@@ -10,12 +10,12 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 /**
  * Class Address
  *
- * @package Webklex\PHPIMAP
+ * @package Profitbyte\PHPIMAP
  */
 class Address {
 

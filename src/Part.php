@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
 
 /**
  * Class Part
  *
- * @package Webklex\PHPIMAP
+ * @package Profitbyte\PHPIMAP
  */
 class Part {
 

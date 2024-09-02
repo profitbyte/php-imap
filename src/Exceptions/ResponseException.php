@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Exceptions;
+namespace Profitbyte\PHPIMAP\Exceptions;
 
 use \Exception;
-use Webklex\PHPIMAP\Connection\Protocols\Response;
+use Profitbyte\PHPIMAP\Connection\Protocols\Response;
 
 /**
  * Class ResponseException
  *
- * @package Webklex\PHPIMAP\Exceptions
+ * @package Profitbyte\PHPIMAP\Exceptions
  */
 class ResponseException extends Exception {
 

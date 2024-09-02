@@ -10,31 +10,31 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 use ErrorException;
-use Webklex\PHPIMAP\Connection\Protocols\ImapProtocol;
-use Webklex\PHPIMAP\Connection\Protocols\LegacyProtocol;
-use Webklex\PHPIMAP\Connection\Protocols\ProtocolInterface;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\EventNotFoundException;
-use Webklex\PHPIMAP\Exceptions\FolderFetchingException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\ProtocolNotSupportedException;
-use Webklex\PHPIMAP\Exceptions\ResponseException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\Support\FolderCollection;
-use Webklex\PHPIMAP\Support\Masks\AttachmentMask;
-use Webklex\PHPIMAP\Support\Masks\MessageMask;
-use Webklex\PHPIMAP\Traits\HasEvents;
+use Profitbyte\PHPIMAP\Connection\Protocols\ImapProtocol;
+use Profitbyte\PHPIMAP\Connection\Protocols\LegacyProtocol;
+use Profitbyte\PHPIMAP\Connection\Protocols\ProtocolInterface;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\EventNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\FolderFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\ProtocolNotSupportedException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Support\FolderCollection;
+use Profitbyte\PHPIMAP\Support\Masks\AttachmentMask;
+use Profitbyte\PHPIMAP\Support\Masks\MessageMask;
+use Profitbyte\PHPIMAP\Traits\HasEvents;
 
 /**
  * Class Client
  *
- * @package Webklex\PHPIMAP
+ * @package Profitbyte\PHPIMAP
  */
 class Client {
     use HasEvents;

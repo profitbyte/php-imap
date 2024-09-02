@@ -14,19 +14,19 @@ namespace Tests;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Client;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Connection\Protocols\ImapProtocol;
-use Webklex\PHPIMAP\Connection\Protocols\Response;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\Folder;
-use Webklex\PHPIMAP\Support\Masks\AttachmentMask;
-use Webklex\PHPIMAP\Support\Masks\MessageMask;
+use Profitbyte\PHPIMAP\Client;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Connection\Protocols\ImapProtocol;
+use Profitbyte\PHPIMAP\Connection\Protocols\Response;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Folder;
+use Profitbyte\PHPIMAP\Support\Masks\AttachmentMask;
+use Profitbyte\PHPIMAP\Support\Masks\MessageMask;
 
 class ClientTest extends TestCase {
 

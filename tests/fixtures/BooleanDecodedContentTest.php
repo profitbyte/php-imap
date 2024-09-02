@@ -12,7 +12,7 @@
 
 namespace Tests\fixtures;
 
-use Webklex\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\Attachment;
 
 /**
  * Class BooleanDecodedContentTest

@@ -10,22 +10,22 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace Profitbyte\PHPIMAP\Connection\Protocols;
 
 use ErrorException;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MessageNotFoundException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\MessageNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\IMAP;
 
 /**
  * Interface ProtocolInterface
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package Profitbyte\PHPIMAP\Connection\Protocols
  */
 interface ProtocolInterface {
 

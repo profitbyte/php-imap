@@ -10,14 +10,14 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support\Masks;
+namespace Profitbyte\PHPIMAP\Support\Masks;
 
-use Webklex\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\Attachment;
 
 /**
  * Class AttachmentMask
  *
- * @package Webklex\PHPIMAP\Support\Masks
+ * @package Profitbyte\PHPIMAP\Support\Masks
  * @mixin Attachment
  */
 class AttachmentMask extends Mask {

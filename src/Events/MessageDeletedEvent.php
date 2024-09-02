@@ -10,12 +10,12 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Events;
+namespace Profitbyte\PHPIMAP\Events;
 
 /**
  * Class MessageDeletedEvent
  *
- * @package Webklex\PHPIMAP\Events
+ * @package Profitbyte\PHPIMAP\Events
  */
 class MessageDeletedEvent extends MessageNewEvent {
 

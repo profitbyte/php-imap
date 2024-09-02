@@ -12,7 +12,7 @@
 
 namespace Tests\fixtures;
 
-use Webklex\PHPIMAP\Address;
+use Profitbyte\PHPIMAP\Address;
 
 /**
  * Class UndefinedCharsetHeaderTest

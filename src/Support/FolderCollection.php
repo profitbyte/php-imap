@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support;
+namespace Profitbyte\PHPIMAP\Support;
 
 use Illuminate\Support\Collection;
-use Webklex\PHPIMAP\Folder;
+use Profitbyte\PHPIMAP\Folder;
 
 /**
  * Class FolderCollection
  *
- * @package Webklex\PHPIMAP\Support
+ * @package Profitbyte\PHPIMAP\Support
  * @implements Collection<int, Folder>
  */
 class FolderCollection extends PaginatedCollection {

@@ -13,8 +13,8 @@
 namespace Tests\issues;
 
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Header;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Header;
 
 class Issue420Test extends TestCase {
 

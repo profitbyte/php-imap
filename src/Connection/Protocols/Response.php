@@ -11,14 +11,14 @@
 */
 
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace Profitbyte\PHPIMAP\Connection\Protocols;
 
-use Webklex\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
 
 /**
  * Class Response
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package Profitbyte\PHPIMAP\Connection\Protocols
  */
 class Response {
 

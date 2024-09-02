@@ -10,15 +10,15 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Support;
+namespace Profitbyte\PHPIMAP\Support;
 
 use Illuminate\Support\Collection;
-use Webklex\PHPIMAP\Message;
+use Profitbyte\PHPIMAP\Message;
 
 /**
  * Class MessageCollection
  *
- * @package Webklex\PHPIMAP\Support
+ * @package Profitbyte\PHPIMAP\Support
  * @implements Collection<int, Message>
  */
 class MessageCollection extends PaginatedCollection {

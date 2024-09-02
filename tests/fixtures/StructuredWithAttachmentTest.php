@@ -12,8 +12,8 @@
 
 namespace Tests\fixtures;
 
-use Webklex\PHPIMAP\Attachment;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Attachment;
+use Profitbyte\PHPIMAP\IMAP;
 
 /**
  * Class StructuredWithAttachmentTest

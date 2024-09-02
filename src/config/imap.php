@@ -111,7 +111,7 @@ return [
     |       Default FALSE - Set to TRUE if you want to ignore certain exception while fetching bulk messages
     |   -RFC822
     |       Default TRUE - Set to FALSE to prevent the usage of \imap_rfc822_parse_headers().
-    |                      See https://github.com/Webklex/php-imap/issues/115 for more information.
+    |                      See https://github.com/Profitbyte/php-imap/issues/115 for more information.
     |   -Debug enable to trace communication traffic
     |   -UID cache enable the UID cache
     |   -Fallback date is used if the given message date could not be parsed
@@ -143,8 +143,8 @@ return [
     */
     'options' => [
         'delimiter' => '/',
-        'fetch' => \Webklex\PHPIMAP\IMAP::FT_PEEK,
-        'sequence' => \Webklex\PHPIMAP\IMAP::ST_UID,
+        'fetch' => \Profitbyte\PHPIMAP\IMAP::FT_PEEK,
+        'sequence' => \Profitbyte\PHPIMAP\IMAP::ST_UID,
         'fetch_body' => true,
         'fetch_flags' => true,
         'soft_fail' => false,
@@ -189,20 +189,20 @@ return [
      */
     'events' => [
         "message" => [
-            'new' => \Webklex\PHPIMAP\Events\MessageNewEvent::class,
-            'moved' => \Webklex\PHPIMAP\Events\MessageMovedEvent::class,
-            'copied' => \Webklex\PHPIMAP\Events\MessageCopiedEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\MessageDeletedEvent::class,
-            'restored' => \Webklex\PHPIMAP\Events\MessageRestoredEvent::class,
+            'new' => \Profitbyte\PHPIMAP\Events\MessageNewEvent::class,
+            'moved' => \Profitbyte\PHPIMAP\Events\MessageMovedEvent::class,
+            'copied' => \Profitbyte\PHPIMAP\Events\MessageCopiedEvent::class,
+            'deleted' => \Profitbyte\PHPIMAP\Events\MessageDeletedEvent::class,
+            'restored' => \Profitbyte\PHPIMAP\Events\MessageRestoredEvent::class,
         ],
         "folder" => [
-            'new' => \Webklex\PHPIMAP\Events\FolderNewEvent::class,
-            'moved' => \Webklex\PHPIMAP\Events\FolderMovedEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\FolderDeletedEvent::class,
+            'new' => \Profitbyte\PHPIMAP\Events\FolderNewEvent::class,
+            'moved' => \Profitbyte\PHPIMAP\Events\FolderMovedEvent::class,
+            'deleted' => \Profitbyte\PHPIMAP\Events\FolderDeletedEvent::class,
         ],
         "flag" => [
-            'new' => \Webklex\PHPIMAP\Events\FlagNewEvent::class,
-            'deleted' => \Webklex\PHPIMAP\Events\FlagDeletedEvent::class,
+            'new' => \Profitbyte\PHPIMAP\Events\FlagNewEvent::class,
+            'deleted' => \Profitbyte\PHPIMAP\Events\FlagDeletedEvent::class,
         ],
     ],
 
@@ -220,7 +220,7 @@ return [
     | The provided masks below are used as the default masks.
      */
     'masks' => [
-        'message' => \Webklex\PHPIMAP\Support\Masks\MessageMask::class,
-        'attachment' => \Webklex\PHPIMAP\Support\Masks\AttachmentMask::class
+        'message' => \Profitbyte\PHPIMAP\Support\Masks\MessageMask::class,
+        'attachment' => \Profitbyte\PHPIMAP\Support\Masks\AttachmentMask::class
     ]
 ];

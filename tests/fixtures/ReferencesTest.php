@@ -47,7 +47,7 @@ class ReferencesTest extends FixtureTestCase {
             'This one: is "right" <ding@dong.com>',
             'No-address@UNKNOWN'
             ], $message->cc->map(function($address){
-                /** @var \Webklex\PHPIMAP\Address $address */
+                /** @var \Profitbyte\PHPIMAP\Address $address */
                 return $address->full;
             }));
     }

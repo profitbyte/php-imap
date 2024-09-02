@@ -13,11 +13,11 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Client;
-use Webklex\PHPIMAP\ClientManager;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Client;
+use Profitbyte\PHPIMAP\ClientManager;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\IMAP;
 
 class ClientManagerTest extends TestCase {
 

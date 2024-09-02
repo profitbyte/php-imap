@@ -14,27 +14,27 @@ namespace Tests\live;
 
 use Carbon\Carbon;
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Client;
-use Webklex\PHPIMAP\ClientManager;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\Exceptions\EventNotFoundException;
-use Webklex\PHPIMAP\Exceptions\FolderFetchingException;
-use Webklex\PHPIMAP\Exceptions\GetMessagesFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\ImapServerErrorException;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\InvalidWhereQueryCriteriaException;
-use Webklex\PHPIMAP\Exceptions\MaskNotFoundException;
-use Webklex\PHPIMAP\Exceptions\MessageContentFetchingException;
-use Webklex\PHPIMAP\Exceptions\MessageFlagException;
-use Webklex\PHPIMAP\Exceptions\MessageHeaderFetchingException;
-use Webklex\PHPIMAP\Exceptions\MessageSearchValidationException;
-use Webklex\PHPIMAP\Exceptions\ResponseException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\Folder;
-use Webklex\PHPIMAP\Message;
-use Webklex\PHPIMAP\Query\WhereQuery;
+use Profitbyte\PHPIMAP\Client;
+use Profitbyte\PHPIMAP\ClientManager;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\Exceptions\EventNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\FolderFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\GetMessagesFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\ImapServerErrorException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\InvalidWhereQueryCriteriaException;
+use Profitbyte\PHPIMAP\Exceptions\MaskNotFoundException;
+use Profitbyte\PHPIMAP\Exceptions\MessageContentFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\MessageFlagException;
+use Profitbyte\PHPIMAP\Exceptions\MessageHeaderFetchingException;
+use Profitbyte\PHPIMAP\Exceptions\MessageSearchValidationException;
+use Profitbyte\PHPIMAP\Exceptions\ResponseException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\Folder;
+use Profitbyte\PHPIMAP\Message;
+use Profitbyte\PHPIMAP\Query\WhereQuery;
 
 /**
  * Class LegacyTest

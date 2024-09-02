@@ -10,7 +10,7 @@
 *  -
 */
 
-class CustomMessageMask extends \Webklex\PHPIMAP\Support\Masks\MessageMask {
+class CustomMessageMask extends \Profitbyte\PHPIMAP\Support\Masks\MessageMask {
 
     /**
      * New custom method which can be called through a mask
@@ -30,16 +30,16 @@ class CustomMessageMask extends \Webklex\PHPIMAP\Support\Masks\MessageMask {
 
 }
 
-$cm = new \Webklex\PHPIMAP\ClientManager('path/to/config/imap.php');
+$cm = new \Profitbyte\PHPIMAP\ClientManager('path/to/config/imap.php');
 
-/** @var \Webklex\PHPIMAP\Client $client */
+/** @var \Profitbyte\PHPIMAP\Client $client */
 $client = $cm->account('default');
 $client->connect();
 
-/** @var \Webklex\PHPIMAP\Folder $folder */
+/** @var \Profitbyte\PHPIMAP\Folder $folder */
 $folder = $client->getFolder('INBOX');
 
-/** @var \Webklex\PHPIMAP\Message $message */
+/** @var \Profitbyte\PHPIMAP\Message $message */
 $message = $folder->query()->limit(1)->get()->first();
 
 /** @var CustomMessageMask $masked_message */

@@ -13,7 +13,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Address;
+use Profitbyte\PHPIMAP\Address;
 
 class AddressTest extends TestCase {
 

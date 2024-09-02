@@ -13,11 +13,11 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\InvalidMessageDateException;
-use Webklex\PHPIMAP\Exceptions\MessageContentFetchingException;
-use Webklex\PHPIMAP\Header;
-use Webklex\PHPIMAP\Structure;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\InvalidMessageDateException;
+use Profitbyte\PHPIMAP\Exceptions\MessageContentFetchingException;
+use Profitbyte\PHPIMAP\Header;
+use Profitbyte\PHPIMAP\Structure;
 
 class StructureTest extends TestCase {
 

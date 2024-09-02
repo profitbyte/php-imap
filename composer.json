@@ -1,5 +1,5 @@
 {
-    "name": "Webklex/php-imap",
+    "name": "Profitbyte/php-imap",
     "type": "library",
     "description": "PHP IMAP client",
     "keywords": [

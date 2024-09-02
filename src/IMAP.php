@@ -10,7 +10,7 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP;
+namespace Profitbyte\PHPIMAP;
 
 /**
  * Class IMAP

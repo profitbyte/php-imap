@@ -10,16 +10,16 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace Profitbyte\PHPIMAP\Connection\Protocols;
 
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\ConnectionFailedException;
+use Profitbyte\PHPIMAP\IMAP;
 
 /**
  * Class Protocol
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package Profitbyte\PHPIMAP\Connection\Protocols
  */
 abstract class Protocol implements ProtocolInterface {
 

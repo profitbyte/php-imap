@@ -10,20 +10,20 @@
 *  -
 */
 
-namespace Webklex\PHPIMAP\Connection\Protocols;
+namespace Profitbyte\PHPIMAP\Connection\Protocols;
 
-use Webklex\PHPIMAP\ClientManager;
-use Webklex\PHPIMAP\Config;
-use Webklex\PHPIMAP\Exceptions\AuthFailedException;
-use Webklex\PHPIMAP\Exceptions\ImapBadRequestException;
-use Webklex\PHPIMAP\Exceptions\MethodNotSupportedException;
-use Webklex\PHPIMAP\Exceptions\RuntimeException;
-use Webklex\PHPIMAP\IMAP;
+use Profitbyte\PHPIMAP\ClientManager;
+use Profitbyte\PHPIMAP\Config;
+use Profitbyte\PHPIMAP\Exceptions\AuthFailedException;
+use Profitbyte\PHPIMAP\Exceptions\ImapBadRequestException;
+use Profitbyte\PHPIMAP\Exceptions\MethodNotSupportedException;
+use Profitbyte\PHPIMAP\Exceptions\RuntimeException;
+use Profitbyte\PHPIMAP\IMAP;
 
 /**
  * Class LegacyProtocol
  *
- * @package Webklex\PHPIMAP\Connection\Protocols
+ * @package Profitbyte\PHPIMAP\Connection\Protocols
  */
 class LegacyProtocol extends Protocol {
 
